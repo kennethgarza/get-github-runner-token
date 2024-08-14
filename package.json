@@ -1,0 +1,23 @@
+{
+  "name": "get-github-runner-token",
+  "version": "1.0.0",
+  "description": "Gets a github runner token using the appid, installid, and privateKey",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennethgarza/get-github-runner-token.git"
+  },
+  "author": "Kenneth Garza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kennethgarza/get-github-runner-token/issues"
+  },
+  "homepage": "https://github.com/kennethgarza/get-github-runner-token#readme",
+  "dependencies": {
+    "axios": "^1.7.4",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
