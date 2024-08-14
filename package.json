@@ -4,7 +4,7 @@
   "description": "Gets a github runner token using the appid, installid, and privateKey",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app": "docker compose up"
   },
   "repository": {
     "type": "git",

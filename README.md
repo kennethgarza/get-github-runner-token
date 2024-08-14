@@ -31,3 +31,5 @@ app-1  | It Expires: 2024-08-14T19:28:08.286Z
 
 ## A small note about privacy
 Please be careful with the `.env` file.  It should be considered very private and never uploaded to a git repo of any kind.  The `.gitignore` should prevent it from added but double check anyways.
+
+The console output will output these tokens.  It is best to not share the screen or anything while generating them.  Like all GitHub tokens, they are short lived so you may need to regenerate them at some point again.
