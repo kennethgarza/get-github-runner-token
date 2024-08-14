@@ -28,3 +28,6 @@ app-1  | Found authToken : ghs_TOKEN_HERE
 app-1  | Found Registration Token: AZD_REGISTRATION_TOKEN_5XA
 app-1  | It Expires: 2024-08-14T19:28:08.286Z
 ```
+
+## A small note about privacy
+Please be careful with the `.env` file.  It should be considered very private and never uploaded to a git repo of any kind.  The `.gitignore` should prevent it from added but double check anyways.

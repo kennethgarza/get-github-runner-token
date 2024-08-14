@@ -3,8 +3,8 @@ const axios = require("axios");
 
 class GitHubApp {
     constructor(appId, installId, privateKey){
-        this.id = appId; //"199316";
-        this.installationId = installId; //"25586634";
+        this.id = appId;
+        this.installationId = installId;
         this.privateKey = privateKey;
     }
 
@@ -24,9 +24,6 @@ class GitHubApp {
     }
 
     generateAccessTokenAsync = async () => {
-        
-        //let key = fs.readFileSync(this.privateKeyPath, "utf8");
-
         let payload = {
             iat: Math.floor(new Date().getTime() / 1000) - 60,          // 1 minute ago
             exp: Math.floor(new Date().getTime() / 1000) + (2 * 60),    // 2 minutes from now
@@ -40,7 +37,6 @@ class GitHubApp {
         let token = jwt.sign(payload, this.privateKey, signingOptions);
 
         // now that we have the bearer token, we need to exchange that for an access token
-
         let url = `https://api.github.com/app/installations/${this.installationId}/access_tokens`;
 
         let config = {
